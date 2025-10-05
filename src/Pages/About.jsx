@@ -12,7 +12,7 @@ const StatCard = memo(({ icon: Icon, color, value, label, description, animation
 
 const AboutPage = () => {
   const { totalProjects, totalCertificates, yearExperience } = useMemo(() => {
-    const startDate = new Date("2021-11-06"); 
+    const startDate = new Date("2019-10-05"); 
     const today = new Date();
     const experience = today.getFullYear() - startDate.getFullYear() - (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
     return { totalProjects: dummyProjects.length, totalCertificates: dummyCertificates.length, yearExperience: experience };
